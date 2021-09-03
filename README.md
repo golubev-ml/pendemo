@@ -1,4 +1,9 @@
+## Запуск тестового сайта
+
+```
 docker run --rm -it -p 80:80 vulnerables/web-dvwa
+```
+
 http://localhost/index.php
 reset/create database
 admin
